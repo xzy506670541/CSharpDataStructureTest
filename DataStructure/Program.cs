@@ -125,57 +125,57 @@ namespace DataStructure
             #endregion
 
             #region[视频编号:2-6 装箱和拆箱]
-            //int n = 10000000;
-            //Stopwatch t1 = new Stopwatch();
-            //Stopwatch t2 = new Stopwatch();
-            //Stopwatch t3 = new Stopwatch();
-            //Stopwatch t4 = new Stopwatch();
+            int n = 10000000;
+            Stopwatch t1 = new Stopwatch();
+            Stopwatch t2 = new Stopwatch();
+            Stopwatch t3 = new Stopwatch();
+            Stopwatch t4 = new Stopwatch();
 
-            ////测试1：泛型List+int值类型
-            //t1.Start();
-            //List<int> l = new List<int>();
-            //for (int i = 0; i <n; i++)
-            //{
-            //    l.Add(i);//int:值类型+List:不发生装箱
-            //    int x = l[i];//int:值类型+List:不发生拆箱
-            //}
-            //t1.Stop();
-            //Console.WriteLine("测试1：泛型List+int值类型 花费时间:" + t1.ElapsedMilliseconds + "ms");
+            //测试1：泛型List+int值类型
+            t1.Start();
+            List<int> l = new List<int>();
+            for (int i = 0; i < n; i++)
+            {
+                l.Add(i);//int:值类型+List:不发生装箱
+                int x = l[i];//int:值类型+List:不发生拆箱
+            }
+            t1.Stop();
+            Console.WriteLine("测试1：泛型List+int值类型 花费时间:" + t1.ElapsedMilliseconds + "ms");
 
-            ////测试2:非泛型ArrayList+int值类型
-            //t2.Start();
-            //ArrayList a = new ArrayList();
-            //for (int i = 0; i <n; i++)
-            //{
-            //    a.Add(i);//发生装箱：非泛型ArrayList+int值类型
-            //    int x = (int)a[i];//发生拆箱：非泛型ArrayList+int值类型
-            //}
-            //t2.Stop();
-            //Console.WriteLine("测试2:非泛型ArrayList+int值类型 花费时间:" + t2.ElapsedMilliseconds + "ms");
+            //测试2:非泛型ArrayList+int值类型
+            t2.Start();
+            ArrayList a = new ArrayList();
+            for (int i = 0; i < n; i++)
+            {
+                a.Add(i);//发生装箱：非泛型ArrayList+int值类型
+                int x = (int)a[i];//发生拆箱：非泛型ArrayList+int值类型
+            }
+            t2.Stop();
+            Console.WriteLine("测试2:非泛型ArrayList+int值类型 花费时间:" + t2.ElapsedMilliseconds + "ms");
 
-            ////测试3：泛型List+引用类型对象string
-            //t3.Start();
-            //List<string> l2 = new List<string>();
-            //for (int i = 0; i <n; i++)
-            //{
-            //    l2.Add("X");//不发生装箱
-            //    string x = l2[i];//不发生拆箱
-            //}
-            //t3.Stop();
-            //Console.WriteLine("测试3：泛型List+引用类型对象string:花费时间:" + t3.ElapsedMilliseconds+"ms");
+            //测试3：泛型List+引用类型对象string
+            t3.Start();
+            List<string> l2 = new List<string>();
+            for (int i = 0; i < n; i++)
+            {
+                l2.Add("X");//不发生装箱
+                string x = l2[i];//不发生拆箱
+            }
+            t3.Stop();
+            Console.WriteLine("测试3：泛型List+引用类型对象string:花费时间:" + t3.ElapsedMilliseconds + "ms");
 
-            ////测试4:非泛型ArrayList+ 引用类型string
-            //t4.Start();
-            //ArrayList a2 = new ArrayList();
-            //for (int i = 0; i <n; i++)
-            //{
-            //    a2.Add("X");//不发生装箱
-            //    string s = (string)a2[i];//不发生拆箱
-            //}
-            //t4.Stop();
-            //Console.WriteLine("测试4:非泛型ArrayList+ 引用类型string 花费时间:" + t4.ElapsedMilliseconds + "ms");
+            //测试4:非泛型ArrayList+ 引用类型string
+            t4.Start();
+            ArrayList a2 = new ArrayList();
+            for (int i = 0; i < n; i++)
+            {
+                a2.Add("X");//不发生装箱
+                string s = (string)a2[i];//不发生拆箱
+            }
+            t4.Stop();
+            Console.WriteLine("测试4:非泛型ArrayList+ 引用类型string 花费时间:" + t4.ElapsedMilliseconds + "ms");
 
-            //Console.Read();
+            Console.Read();
             #endregion
         }
     }
