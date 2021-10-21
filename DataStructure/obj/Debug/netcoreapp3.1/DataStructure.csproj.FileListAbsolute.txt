@@ -1,0 +1,13 @@
+E:\Test\C#\Course\DataStructure\bin\Debug\netcoreapp3.1\DataStructure.exe
+E:\Test\C#\Course\DataStructure\bin\Debug\netcoreapp3.1\DataStructure.deps.json
+E:\Test\C#\Course\DataStructure\bin\Debug\netcoreapp3.1\DataStructure.runtimeconfig.json
+E:\Test\C#\Course\DataStructure\bin\Debug\netcoreapp3.1\DataStructure.runtimeconfig.dev.json
+E:\Test\C#\Course\DataStructure\bin\Debug\netcoreapp3.1\DataStructure.dll
+E:\Test\C#\Course\DataStructure\bin\Debug\netcoreapp3.1\DataStructure.pdb
+E:\Test\C#\Course\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.AssemblyInfoInputs.cache
+E:\Test\C#\Course\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.AssemblyInfo.cs
+E:\Test\C#\Course\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.csproj.CoreCompileInputs.cache
+E:\Test\C#\Course\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.dll
+E:\Test\C#\Course\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.pdb
+E:\Test\C#\Course\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.genruntimeconfig.cache
+E:\Test\C#\Course\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.GeneratedMSBuildEditorConfig.editorconfig
