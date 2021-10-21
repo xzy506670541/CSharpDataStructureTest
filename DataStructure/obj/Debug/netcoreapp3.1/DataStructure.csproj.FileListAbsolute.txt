@@ -11,3 +11,16 @@ E:\Test\C#\Course\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.dll
 E:\Test\C#\Course\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.pdb
 E:\Test\C#\Course\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.genruntimeconfig.cache
 E:\Test\C#\Course\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\bin\Debug\netcoreapp3.1\DataStructure.exe
+C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\bin\Debug\netcoreapp3.1\DataStructure.deps.json
+C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\bin\Debug\netcoreapp3.1\DataStructure.runtimeconfig.json
+C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\bin\Debug\netcoreapp3.1\DataStructure.runtimeconfig.dev.json
+C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\bin\Debug\netcoreapp3.1\DataStructure.dll
+C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\bin\Debug\netcoreapp3.1\DataStructure.pdb
+C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.AssemblyInfo.cs
+C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.dll
+C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.pdb
+C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.genruntimeconfig.cache

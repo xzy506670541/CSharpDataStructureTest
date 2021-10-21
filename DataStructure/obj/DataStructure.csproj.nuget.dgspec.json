@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Test\\C#\\Course\\DataStructure\\DataStructure.csproj": {}
+    "C:\\Users\\Administrator\\Documents\\GitHub\\CSharpDataStructureTest\\DataStructure\\DataStructure.csproj": {}
   },
   "projects": {
-    "E:\\Test\\C#\\Course\\DataStructure\\DataStructure.csproj": {
+    "C:\\Users\\Administrator\\Documents\\GitHub\\CSharpDataStructureTest\\DataStructure\\DataStructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Test\\C#\\Course\\DataStructure\\DataStructure.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\CSharpDataStructureTest\\DataStructure\\DataStructure.csproj",
         "projectName": "DataStructure",
-        "projectPath": "E:\\Test\\C#\\Course\\DataStructure\\DataStructure.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\CSharpDataStructureTest\\DataStructure\\DataStructure.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Test\\C#\\Course\\DataStructure\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\CSharpDataStructureTest\\DataStructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

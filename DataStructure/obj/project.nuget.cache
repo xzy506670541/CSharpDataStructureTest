@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "md2XCJ3ZxPcbzwdJBvdclISxbNghO8N6hmjbmEfYZzZtpQmsf1U5s6jQcqdOBg0E7il6DnVVk1HiP9UUirdSoA==",
+  "dgSpecHash": "kdMuF/A1LqVNGzxeFovVMRLtF8iTWzTX7GJ1v0GxUv4+YP+b1K3KhVSeO/xEG6P/aFh+GUO4waZinBsNQdmz8g==",
   "success": true,
-  "projectFilePath": "E:\\Test\\C#\\Course\\DataStructure\\DataStructure.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Documents\\GitHub\\CSharpDataStructureTest\\DataStructure\\DataStructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

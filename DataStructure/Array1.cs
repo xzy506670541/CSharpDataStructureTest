@@ -4,10 +4,13 @@ using System.Text;
 
 namespace DataStructure
 {
-    class Array1
+    #region[2-7 使用泛型技术]
+    //class Array1
+    class Array1<E>
     {
         /// <summary>int[]:数组</summary>
-        private int[] data;
+        //private int[] data;
+        private E[] data;
 
         /// <summary>int:数组中存储元素个数</summary>
         private int N;
@@ -15,12 +18,13 @@ namespace DataStructure
         //构造函数:
         public Array1(int capacity)
         {
-            data = new int[capacity];
+            //data = new int[capacity];
+            data = new E[capacity];
             N = 0;
         }
 
         //构造函数
- 
+        public Array1() : this(10) { }
 
         //方法:获取data.Length
         public int Capacity
@@ -40,30 +44,14 @@ namespace DataStructure
             get { return N == 0; }
         }
 
-        ////数组添加元素：在数组中间空间位置添加元素
-        //public void Add(int index,int e)
-        //{
-        //    if (index<0||index>N)
-        //        throw new ArgumentException("数组索引越界！");
-
-        //    if (N==data.Length)
-        //        throw new ArgumentException("数组已满!");
-
-        //    //从后向前，每一个往后挪一个
-        //    for (int i =N-1; i >=index; i--)               
-        //        data[i + 1] = data[i]; //将当前空间数据给后面一个空间，实现将从index开始的元素每一个往后挪一个空间位置
-
-        //    data[index] = e;
-        //    N++;
-        //}
-
         /// <summary>
         /// 视频编号: 2-5 动态数组
         /// 功能：数组添加元素：在数组中间空间位置添加元素
         /// </summary>
         /// <param name="index"></param>
         /// <param name="e"></param>
-        public void Add(int index, int e)
+        //public void Add(int index, int e)
+        public void Add(int index, E e)
         {
             if (index < 0 || index > N)
                 throw new ArgumentException("数组索引越界！");
@@ -81,13 +69,15 @@ namespace DataStructure
         }
 
         //数组添加元素:在末尾空间位置添加元素
-        public void AddLast(int e)
+        //public void AddLast(int e)
+        public void AddLast(E e)
         {
             Add(N, e);
         }
 
         //数组添加元素:在首位空间位置添加元素
-        public void AddFirst(int e)
+        //public void AddFirst(int e)
+        public void AddFirst(E e)
         {
             Add(0, e);
         }
@@ -98,9 +88,10 @@ namespace DataStructure
         /// </summary>
         /// <param name="index">数组中索引编号</param>
         /// <returns></returns>
-        public int Get(int index)
+        //public int Get(int index)
+        public E Get(int index)
         {
-            if (index<0||index>=N)
+            if (index < 0 || index >= N)
             {
                 throw new ArgumentException("数组索引越界！");
             }
@@ -112,7 +103,8 @@ namespace DataStructure
         /// 功能：得到第一个索引的元素
         /// </summary>
         /// <returns></returns>
-        public int GetFirst()
+        //public int GetFirst()
+        public E GetFirst()
         {
             return Get(0);
         }
@@ -122,7 +114,8 @@ namespace DataStructure
         /// 功能：得到数组最后一个索引的元素
         /// </summary>
         /// <returns></returns>
-        public int GetLast()
+        //public int GetLast()
+        public E GetLast()
         {
             return Get(N - 1);
         }
@@ -133,9 +126,10 @@ namespace DataStructure
         /// </summary>
         /// <param name="index">准备在什么索引进行修改</param>
         /// <param name="newE">准备将制定位置的元素修改什么数值</param>
-        public void Set(int index,int newE)
+        //public void Set(int index, int newE)
+        public void Set(int index, E newE)
         {
-            if (index<0||index>=N)
+            if (index < 0 || index >= N)
             {
                 throw new ArgumentException("索引越界!");
             }
@@ -150,9 +144,10 @@ namespace DataStructure
         /// <returns>存在:true| 不存在:false</returns>
         public bool Contains(int e)
         {
-            for (int i = 0; i <N; i++)
+            for (int i = 0; i < N; i++)
             {
-                if (data[i]==e)
+                //if (data[i] == e)
+                if (data[i].Equals(e))
                 {
                     return true;
                 }
@@ -168,37 +163,16 @@ namespace DataStructure
         /// <returns>如果输入的元素存在返回元素在元素中的索引   如果输入的元素不存在数组就返回-1</returns>
         public int IndexOf(int e)
         {
-            for (int i = 0; i <N; i++)
+            for (int i = 0; i < N; i++)
             {
-                if (data[i]==e)
+                //if (data[i] == e)
+                if (data[i].Equals(e))
                 {
                     return i;
                 }
             }
             return -1;
         }
-
-        ///// <summary>
-        /////  视频编号: 2-4 包含、搜索、删除
-        ///// 功能：删除指定索引的元素
-        ///// </summary>
-        ///// <param name="index">删除元素的索引</param>
-        ///// <returns>删除索引的元素内容</returns>
-        //public int RemoveAt(int index)
-        //{
-        //    if (index<0||index>=N)
-        //        throw new ArgumentException("索引越界!");
-
-        //    int del = data[index];//删除位置的元素内容
-
-        //    for (int i = index+1; i <=N-1; i++)
-        //        data[i -1] = data[i];//这里时候联想：删除数组中的元素:动画演示
-
-        //    N--;
-        //    data[N] = default(int);
-
-        //    return del;
-        //}
 
         /// <summary>
         ///  视频编号: 2-4 包含、搜索、删除
@@ -207,24 +181,27 @@ namespace DataStructure
         /// </summary>
         /// <param name="index">删除元素的索引</param>
         /// <returns>删除索引的元素内容</returns>
-        public int RemoveAt(int index)
+        //public int RemoveAt(int index)
+        public E RemoveAt(int index)
         {
             if (index < 0 || index >= N)
                 throw new ArgumentException("索引越界!");
 
-            int del = data[index];//删除位置的元素内容
+            //int del = data[index];//删除位置的元素内容
+            E del = data[index];//删除位置的元素内容
 
             for (int i = index + 1; i <= N - 1; i++)
                 data[i - 1] = data[i];//这里时候联想：删除数组中的元素:动画演示
 
             N--;
-            data[N] = default(int);
+            //data[N] = default(int);
+            data[N] = default(E);
 
 
             // ( 视频编号: 2-5 动态数组:增加内容)想想：动画演示:数组缩容因为当删除数组某个元素后，
             // 如果数组长度没有之前的四分之一长，那么就可以将其缩容一半，减少内存开支，
             //并不是只有之前一半长久缩容，而是四分之一，减少内存空间不断的缩容和扩容
-            if (N==data.Length/4)
+            if (N == data.Length / 4)
                 ResetCapacity(data.Length / 2);
 
             return del;
@@ -235,7 +212,8 @@ namespace DataStructure
         /// 功能：删除第一个索引的元素
         /// </summary>
         /// <returns></returns>
-        public int RemoveFirst()
+        //public int RemoveFirst()
+        public E RemoveFirst()
         {
             return RemoveAt(0);
         }
@@ -245,7 +223,8 @@ namespace DataStructure
         /// 功能：删除数组最后一个索引的元素
         /// </summary>
         /// <returns></returns>
-        public int RemoveLast()
+        //public int RemoveLast()
+        public E RemoveLast()
         {
             return RemoveAt(N - 1);
         }
@@ -258,7 +237,7 @@ namespace DataStructure
         public void Remove(int e)
         {
             int index = IndexOf(e);
-            if (index!=-1)
+            if (index != -1)
                 RemoveAt(index);
         }
 
@@ -269,8 +248,9 @@ namespace DataStructure
         /// <param name="newCapacity"></param>
         private void ResetCapacity(int newCapacity)
         {
-            int[] newData = new int[newCapacity];//新建一个数组，大小是形参
-            for (int i = 0; i <N; i++)
+            //int[] newData = new int[newCapacity];//新建一个数组，大小是形参
+            E[] newData = new E[newCapacity];//新建一个数组，大小是形参
+            for (int i = 0; i < N; i++)
             {
                 newData[i] = data[i];//将之前的数组数据都赋值给新的数组
             }
@@ -286,10 +266,10 @@ namespace DataStructure
             StringBuilder res = new StringBuilder();
             res.Append(string.Format("Array1: count={0} capacity={1}\n", N, data.Length));
             res.Append("[");
-            for (int i = 0; i <N; i++)
+            for (int i = 0; i < N; i++)
             {
                 res.Append(data[i]);
-                if (i!=N-1)
+                if (i != N - 1)
                     res.Append(",  ");
             }
             res.Append("]");
@@ -297,4 +277,5 @@ namespace DataStructure
         }
 
     }
+    #endregion
 }
