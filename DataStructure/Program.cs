@@ -199,6 +199,30 @@ namespace DataStructure
             #endregion
 
             #region[3-3 获取、修改、包含、打印]
+            //LinkedList1<int> l = new LinkedList1<int>();
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    //for循环添加元素
+            //    l.AddFirst(i);
+            //    Console.WriteLine(l);
+            //}
+
+            ////末尾添加元素
+            //l.AddLast(666);
+            //Console.WriteLine(l);
+
+            ////指定位置添加元素
+            //l.Add(2, 999);
+            //Console.WriteLine(l);
+
+            ////指定位置修改元素
+            //l.Set(2, 1000);
+            //Console.WriteLine(l);
+
+            //Console.Read();
+            #endregion
+
+            #region[3-4 删除链表中的结点]
             LinkedList1<int> l = new LinkedList1<int>();
             for (int i = 0; i < 5; i++)
             {
@@ -217,6 +241,18 @@ namespace DataStructure
 
             //指定位置修改元素
             l.Set(2, 1000);
+            Console.WriteLine(l);
+
+            l.RemoveAt(2);
+            Console.WriteLine(l);
+
+            l.RemoveFirst();
+            Console.WriteLine(l);
+
+            l.RemoveLast();
+            Console.WriteLine(l);
+
+            l.Remove(0);
             Console.WriteLine(l);
 
             Console.Read();

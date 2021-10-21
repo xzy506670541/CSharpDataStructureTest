@@ -225,6 +225,97 @@ namespace DataStructure
             return res.ToString();
         }
 
+        /// <summary>
+        /// [Author:XZY Time:20211021]
+        /// [视频编号：3-4 删除链表中的结点]
+        /// [功能：删除指定索引的元素]
+        /// </summary>
+        /// <param name="index">指定索引</param>
+        /// <returns></returns>
+        public E RemoveAt(int index)
+        {
+            if (index<0||index>=N)
+                throw new ArgumentException("非法索引");
+
+            if (index==0)
+            {
+                Node delNode = head;//回忆作者视频动画
+                head = head.next;
+                N--;
+                return delNode.e;
+            }
+            else
+            {
+                Node pre = head;
+                for (int i = 0; i <index-1; i++)
+                    pre = pre.next;
+
+                Node delNode = pre.next;
+                pre.next = delNode.next;
+                N--;
+                return delNode.e;
+            }
+        }
+
+        /// <summary>
+        /// [Author:XZY Time:20211021]
+        /// [视频编号：3-4 删除链表中的结点]
+        /// [功能：删除首位元素]
+        /// </summary>
+        /// <returns></returns>
+        public E RemoveFirst()
+        {
+            return RemoveAt(0);
+        }
+
+        /// <summary>
+        /// [Author:XZY Time:20211021 视频编号：3-4 删除链表中的结点]
+        /// [功能：删除末尾元素]
+        /// </summary>
+        /// <returns></returns>
+        public E RemoveLast()
+        {
+            return RemoveAt(N - 1);
+        }
+
+        /// <summary>
+        /// [Author:XZY Time:20211021 视频编号：3-4 删除链表中的结点]
+        /// [功能：删除指定元素]
+        /// </summary>
+        /// <returns></returns>
+        public void  Remove(E e)
+        {
+            if (head == null)
+                return;
+
+            if (head.e.Equals(e))
+            {
+                head = head.next;//想想动画：如果元素是头元素，那么删除现在的头元素，将下一个元素作为头元素
+                N--;
+            }
+            else
+            {
+                Node cur = head;//联想作者的动画
+                Node pre = null;
+
+                while (cur!=null)//不是最后一个就一直执行
+                {
+                    if (cur.e.Equals(e))//
+                        break;
+
+                    pre = cur;
+                    cur = cur.next;
+
+                    if (cur!=null)
+                    {
+                        pre.next = pre.next.next;//成功将指定元素删除
+                        N--;
+                    }
+                }
+            }
+
+        }
+
     }
 
 
