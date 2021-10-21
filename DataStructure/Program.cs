@@ -179,24 +179,50 @@ namespace DataStructure
             #endregion
 
             #region[视频编号:2-7 使用泛型技术]
-            int[] n = { 1,2,3,4,5,6,7};
-            Array1<int> a = new Array1<int>();
-            for (int i = 0; i <n.Length; i++)
-            {
-                a.AddLast(n[i]);//将数组n添加到a泛型中
-            }
-            Console.WriteLine(a);
+            //int[] n = { 1,2,3,4,5,6,7};
+            //Array1<int> a = new Array1<int>();
+            //for (int i = 0; i <n.Length; i++)
+            //{
+            //    a.AddLast(n[i]);//将数组n添加到a泛型中
+            //}
+            //Console.WriteLine(a);
 
-            string[] s = {"a","b","c","d"};
-            Array1<string> a2 =new Array1<string>();
-            for (int i = 0; i <s.Length; i++)
-            {
-                a2.AddLast(s[i]);//将数组s添加到a2泛型中
-            }
-            Console.WriteLine(a2);
+            //string[] s = {"a","b","c","d"};
+            //Array1<string> a2 =new Array1<string>();
+            //for (int i = 0; i <s.Length; i++)
+            //{
+            //    a2.AddLast(s[i]);//将数组s添加到a2泛型中
+            //}
+            //Console.WriteLine(a2);
 
-            Console.ReadLine();     
+            //Console.ReadLine();     
             #endregion
+
+            #region[3-3 获取、修改、包含、打印]
+            LinkedList1<int> l = new LinkedList1<int>();
+            for (int i = 0; i < 5; i++)
+            {
+                //for循环添加元素
+                l.AddFirst(i);
+                Console.WriteLine(l);
+            }
+
+            //末尾添加元素
+            l.AddLast(666);
+            Console.WriteLine(l);
+
+            //指定位置添加元素
+            l.Add(2, 999);
+            Console.WriteLine(l);
+
+            //指定位置修改元素
+            l.Set(2, 1000);
+            Console.WriteLine(l);
+
+            Console.Read();
+            #endregion
+
         }
     }
 }
+

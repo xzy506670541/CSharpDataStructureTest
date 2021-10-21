@@ -24,3 +24,4 @@ C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\ob
 C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.dll
 C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.pdb
 C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.genruntimeconfig.cache
+C:\Users\Administrator\Documents\GitHub\CSharpDataStructureTest\DataStructure\obj\Debug\netcoreapp3.1\DataStructure.csproj.AssemblyReference.cache
