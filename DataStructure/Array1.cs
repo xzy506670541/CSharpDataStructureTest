@@ -264,7 +264,7 @@ namespace DataStructure
         public override string ToString()
         {
             StringBuilder res = new StringBuilder();
-            res.Append(string.Format("Array1: count={0} capacity={1}\n", N, data.Length));
+            //res.Append(string.Format("Array1: count={0} capacity={1}\n", N, data.Length));
             res.Append("[");
             for (int i = 0; i < N; i++)
             {
